@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Car Loan</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <h1>Perform Car Loan Calculator</h1>
+    <form action="#" method="post" id="carLoanForm">
+        <label for="loanAmount">Loan Amount:</label><br>
+        <input type="number" id="loanAmount" name="loanAmount" required><br><br>
+
+        <label for="loanPeriod">Period:</label><br>
+        <select id="loanPeriod" name="loanPeriod">
+            <option value="3">3 years</option>
+            <option value="4">4 years</option>
+            <option value="5">5 years</option>
+            <option value="7">7 years</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="button" onclick="cancel()">Cancel</button>
+    </form>
+
+    <script>
+        function cancel() {
+            document.getElementById("carLoanForm").reset();
+        }
+    </script>
+</body>
+</html>
